@@ -57,7 +57,7 @@ const StyledList = styled.ul`
 
   @media only screen and (min-width: 1240px) {
     justify-content: center;
-    width: 60%;
+    width: 50%;
   }
 `
 

@@ -13,6 +13,10 @@ const StyledSection = styled.section`
   padding: 3rem 0;
   margin: 0 auto;
   text-align: center;
+
+  @media only screen and (min-width: 768px) {
+    min-height: 40vh;
+  }
 `
 
 const StyledList = styled.ul`
@@ -21,6 +25,12 @@ const StyledList = styled.ul`
   text-align: left;
   margin: 0;
   padding: 1rem 0;
+
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-evenly;
+  }
 `
 
 const StyledListItem = styled.li`
@@ -28,11 +38,20 @@ const StyledListItem = styled.li`
   justify-content: flex-start;
   align-items: center;
   padding-top: 1rem;
+
+  @media only screen and (min-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 const StyledParagraph = styled.p`
   padding-left: 1.5rem;
   font-size: 1.1rem;
+
+  @media only screen and (min-width: 768px) {
+    padding: 0;
+    margin-top: 1rem;
+  }
 `
 
 const ContactForm = () => (

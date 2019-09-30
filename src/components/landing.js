@@ -17,12 +17,22 @@ const StyledSection = styled.section`
 const StyledTitle = styled.h1`
   font-size: 2rem;
   font-weight: 600;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 2.2rem;
+    text-shadow: 1px 1px 1px #000;
+  }
 `
 
 const StyledNumber = styled.h2`
   color: rgb(219, 45, 20);
   font-weight: bold;
   font-size: 1.8rem;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 2.6rem;
+    text-shadow: 1px 1px 1px #000;
+  }
 `
 
 const StyledParagraph = styled.p`
@@ -30,6 +40,11 @@ const StyledParagraph = styled.p`
   font-size: 1.6rem;
   line-height: 1.3;
   font-family: serif;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 2.1rem;
+    text-shadow: 1px 1px 1px #000;
+  }
 `
 
 // const data = useStaticQuery(graphql`

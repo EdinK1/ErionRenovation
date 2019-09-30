@@ -10,6 +10,10 @@ const StyledSection = styled.section`
   padding: 3rem 0;
   color: #fff;
   text-align: center;
+
+  @media only screen and (min-width: 768px) {
+    min-height: 40vh;
+  }
 `
 
 const StyledList = styled.ul`
@@ -19,6 +23,11 @@ const StyledList = styled.ul`
   justify-content: space-between;
   width: 80%;
   list-style-type: none;
+
+  @media only screen and (min-width: 768px) {
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+  }
 `
 
 const StyledListItem = styled.li`
