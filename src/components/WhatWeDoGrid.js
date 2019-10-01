@@ -27,7 +27,7 @@ const GridItemText = styled.span`
   height: 100%;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 2.05rem;
   color: #fff;
   text-shadow: 1px 1px 1px #000;
 `
