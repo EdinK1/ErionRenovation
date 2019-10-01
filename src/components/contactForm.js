@@ -68,7 +68,7 @@ const ContactForm = () => (
       <StyledListItem>
         <FaPhone style={{ "font-size": "2rem" }} />
         <StyledParagraph>
-          <a style={{ color: "#000" }} href="#">
+          <a style={{ color: "#000" }} href="www.google.com">
             604-442-7419
           </a>
         </StyledParagraph>

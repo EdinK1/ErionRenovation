@@ -1,5 +1,4 @@
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
 import React from "react"
 import { FaTools } from "react-icons/fa"
 
