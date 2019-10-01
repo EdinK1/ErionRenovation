@@ -6,14 +6,17 @@ const StyledSection = styled.section`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: 80vh;
+  min-height: 100vh;
   text-align: center;
   text-shadow: 0 0 1px #000;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://www.credibly.com/wp-content/uploads/2015/04/handyman-1030x458.jpg")
-      center center/cover;
-  background-repeat: no-repeat;
+      no-repeat center center/cover;
   color: #fff;
+
+  @media only screen and (min-width: 768px) {
+    min-height: 80vh;
+  }
 `
 const StyledTitle = styled.h1`
   font-size: 2rem;

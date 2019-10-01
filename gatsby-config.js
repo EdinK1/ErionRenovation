@@ -1,10 +1,8 @@
-const GoogleFontsPlugin = require("google-fonts-plugin")
-
 module.exports = {
   siteMetadata: {
-    title: `ErionHandyman`,
-    description: `Handyman living in Tsawwassen.`,
-    author: `Edin Kaymakqi`,
+    title: `ErionRenovation`,
+    description: `Best Renovation services in Tsawwassen.`,
+    author: `Tyran Altintas`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
