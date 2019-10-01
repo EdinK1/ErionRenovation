@@ -4,7 +4,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
 import Header from "./header"
-import ContactForm from "./contactForm"
 import Footer from "./footer"
 import "./layout.css"
 
@@ -28,7 +27,6 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <Container>{children}</Container>
-      <ContactForm />
       <Footer />
     </>
   )

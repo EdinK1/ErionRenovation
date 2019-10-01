@@ -37,7 +37,7 @@ const StyledListItem = styled.li`
 
 const WhatWeDo = () => (
   <div style={{ background: "#333" }}>
-    <StyledSection>
+    <StyledSection id="what">
       <h1>What We Do</h1>
       <StyledList>
         <StyledListItem>
@@ -50,7 +50,19 @@ const WhatWeDo = () => (
           <FaScrewdriver />
         </StyledListItem>
       </StyledList>
-      <p>lorem ipsum med haha kdkd bla bli blu dummy text all around</p>
+
+      <ul>
+        <li>Painting</li>
+        <li>Tiles</li>
+        <li>Flooring</li>
+        <li>Caulking</li>
+        <li>Stucco</li>
+        <li>Bricklaying</li>
+        <li>Fencing</li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </StyledSection>
   </div>
 )

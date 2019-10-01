@@ -6,7 +6,11 @@ import { FaTools } from "react-icons/fa"
 import styled from "styled-components"
 
 const StyledHeader = styled.header`
-  background: #fff;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 `
 const StyledNav = styled.nav`
   display: flex;
@@ -30,13 +34,13 @@ const StyledNav = styled.nav`
   }
 `
 
-const StyledLink = styled(Link)`
+const StyledLink = styled.a`
   text-decoration: none;
-  color: #000;
+  color: #fff;
   cursor: pointer;
 
   &:hover {
-    color: #228b22;
+    color: #f00;
   }
 `
 
@@ -69,7 +73,7 @@ const StyledListItem = styled.li`
 `
 
 const activeLink = {
-  color: "#228b22",
+  color: "#f00",
 }
 
 const StyledIcon = {
@@ -79,26 +83,33 @@ const StyledIcon = {
 const Header = () => (
   <StyledHeader>
     <StyledNav>
-      <h1 style={{ margin: 0 }}>
-        <StyledLink to="/">
-          ErionRenovat
+      <h1
+        style={{
+          margin: 0,
+          "font-size": "2rem",
+          "text-shadow": "1px 1px 1px #000",
+          "font-weight": "200",
+        }}
+      >
+        <StyledLink href="#">
+          Erion Renova
           <FaTools style={StyledIcon} />
           on
         </StyledLink>
       </h1>
       <StyledList>
         <StyledListItem>
-          <StyledLink activeStyle={activeLink} to="/">
+          <StyledLink activeStyle={activeLink} href="#">
             Home
           </StyledLink>
         </StyledListItem>
         <StyledListItem>
-          <StyledLink activeStyle={activeLink} to="/about">
-            About
+          <StyledLink activeStyle={activeLink} href="#what">
+            What We Do
           </StyledLink>
         </StyledListItem>
         <StyledListItem>
-          <StyledLink activeStyle={activeLink} to="/contact">
+          <StyledLink activeStyle={activeLink} href="#contact">
             Contact Us
           </StyledLink>
         </StyledListItem>

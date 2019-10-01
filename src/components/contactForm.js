@@ -1,10 +1,5 @@
 import React from "react"
-import {
-  FaMapMarkerAlt,
-  FaEnvelope,
-  FaUserAlt,
-  FaShareAlt,
-} from "react-icons/fa"
+import { FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa"
 import styled from "styled-components"
 
 const StyledSection = styled.section`
@@ -24,12 +19,11 @@ const StyledList = styled.ul`
   list-style-type: none;
   text-align: left;
   margin: 0;
-  padding: 1rem 0;
 
   @media only screen and (min-width: 768px) {
     display: flex;
     margin-top: 2rem;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 `
 
@@ -38,6 +32,7 @@ const StyledListItem = styled.li`
   justify-content: flex-start;
   align-items: center;
   padding-top: 1rem;
+  width: 100%;
 
   @media only screen and (min-width: 768px) {
     flex-direction: column;
@@ -60,19 +55,23 @@ const ContactForm = () => (
     <StyledList>
       <StyledListItem>
         <FaMapMarkerAlt style={{ "font-size": "2rem" }} />
-        <StyledParagraph>lalalalallala</StyledParagraph>
+        <StyledParagraph>1674 56th Street, Delta, BC</StyledParagraph>
       </StyledListItem>
       <StyledListItem>
         <FaEnvelope style={{ "font-size": "2rem" }} />
-        <StyledParagraph>lalalalallala</StyledParagraph>
+        <StyledParagraph>
+          <a style={{ color: "#000" }} href="mailto:erionrenovation@gmail.com">
+            erionrenovation@gmail.com
+          </a>
+        </StyledParagraph>
       </StyledListItem>
       <StyledListItem>
-        <FaUserAlt style={{ "font-size": "2rem" }} />
-        <StyledParagraph>lalalalallala</StyledParagraph>
-      </StyledListItem>
-      <StyledListItem>
-        <FaShareAlt style={{ "font-size": "2rem" }} />
-        <StyledParagraph>lalalalallala</StyledParagraph>
+        <FaPhone style={{ "font-size": "2rem" }} />
+        <StyledParagraph>
+          <a style={{ color: "#000" }} href="#">
+            604-442-7419
+          </a>
+        </StyledParagraph>
       </StyledListItem>
     </StyledList>
   </StyledSection>

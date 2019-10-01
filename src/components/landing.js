@@ -9,10 +9,11 @@ const StyledSection = styled.section`
   min-height: 80vh;
   text-align: center;
   text-shadow: 0 0 1px #000;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url("https://img.freepik.com/free-photo/texture-wooden-boards_1249-169.jpg?size=626&ext=jpg")
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://www.credibly.com/wp-content/uploads/2015/04/handyman-1030x458.jpg")
       center center/cover;
-  color: #333;
+  background-repeat: no-repeat;
+  color: #fff;
 `
 const StyledTitle = styled.h1`
   font-size: 2rem;
@@ -25,7 +26,7 @@ const StyledTitle = styled.h1`
 `
 
 const StyledNumber = styled.h2`
-  color: rgb(219, 45, 20);
+  color: #000;
   font-weight: bold;
   font-size: 1.8rem;
 
@@ -54,10 +55,8 @@ const StyledParagraph = styled.p`
 const Landing = () => (
   <StyledSection>
     <StyledTitle>ONE CALL can solve all your house problems!</StyledTitle>
-    <StyledNumber>+800 456 12 54 </StyledNumber>
-    <StyledParagraph>
-      Call us today to have your first consultation.
-    </StyledParagraph>
+    <StyledNumber>(+1) 604-442-7419 </StyledNumber>
+    <StyledParagraph>Call us for your free estimate.</StyledParagraph>
   </StyledSection>
 )
 
