@@ -40,7 +40,7 @@ const StyledParagraph = styled.p`
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.3;
-  font-family: serif;
+  font-family: sans-serif;
 
   @media only screen and (min-width: 768px) {
     font-size: 2.1rem;

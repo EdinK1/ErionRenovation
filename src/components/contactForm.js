@@ -4,13 +4,12 @@ import styled from "styled-components"
 
 const StyledSection = styled.section`
   max-width: 80%;
-  min-height: 50vh;
-  padding: 3rem 0;
+  padding-bottom: 3rem;
   margin: 0 auto;
   text-align: center;
 
   @media only screen and (min-width: 768px) {
-    min-height: 40vh;
+    padding: 1rem 0 4rem 0;
   }
 `
 
@@ -51,7 +50,7 @@ const StyledParagraph = styled.p`
 
 const ContactForm = () => (
   <StyledSection>
-    <h1>Contact Us</h1>
+    <h1 id="contact">Contact Us</h1>
     <StyledList>
       <StyledListItem>
         <FaMapMarkerAlt style={{ "font-size": "2rem" }} />
@@ -68,7 +67,7 @@ const ContactForm = () => (
       <StyledListItem>
         <FaPhone style={{ "font-size": "2rem" }} />
         <StyledParagraph>
-          <a style={{ color: "#000" }} href="www.google.com">
+          <a style={{ color: "#000" }} href="tel:604-442-7419">
             604-442-7419
           </a>
         </StyledParagraph>

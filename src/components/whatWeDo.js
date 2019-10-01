@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const StyledGrid = styled.main`
-  padding: 4rem 0;
+  padding-top: 4rem;
 `
 
 const Grid = styled.ul`
@@ -27,14 +27,21 @@ const GridItemText = styled.span`
   height: 100%;
   justify-content: center;
   align-items: center;
-  font-size: 2.05rem;
+  font-size: 1.75rem;
+  font-family: sans-serif;
   color: #fff;
   text-shadow: 1px 1px 1px #000;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 2.05rem;
+  }
 `
 
 const WhatWeDo = () => (
   <StyledGrid>
-    <h1 style={{ "text-align": "center" }}>Our Services</h1>
+    <h1 id="what" style={{ "text-align": "center" }}>
+      Our Services
+    </h1>
     <Grid>
       <li
         style={{

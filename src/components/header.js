@@ -37,6 +37,8 @@ const StyledLink = styled.a`
   text-decoration: none;
   color: #fff;
   cursor: pointer;
+  font-family: sans-serif, serif;
+  font-weight: 600;
 
   &:hover {
     color: #f00;
@@ -87,10 +89,9 @@ const Header = () => (
           margin: 0,
           "font-size": "2rem",
           "text-shadow": "1px 1px 1px #000",
-          "font-weight": "200",
         }}
       >
-        <StyledLink href="#">
+        <StyledLink href="#" style={{ "font-weight": "200" }}>
           Erion Renova
           <FaTools style={StyledIcon} />
           on
