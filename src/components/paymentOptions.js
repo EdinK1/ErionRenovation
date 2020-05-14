@@ -42,7 +42,7 @@ const Card = styled.img`
 
 const paymentOptions = () => {
   return (
-    <Section>
+    <Section id="payment">
       <h1>Payment options</h1>
       <Wrapper>
         <CardWrapper>

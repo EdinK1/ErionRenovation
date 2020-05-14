@@ -41,7 +41,7 @@ const StyledLink = styled.a`
   font-weight: 600;
 
   &:hover {
-    color: #f00;
+    color: #f4f4f4;
   }
 `
 
@@ -106,6 +106,11 @@ const Header = () => (
         <StyledListItem>
           <StyledLink activeStyle={activeLink} href="#what">
             What We Do
+          </StyledLink>
+        </StyledListItem>
+        <StyledListItem>
+          <StyledLink activeStyle={activeLink} href="#payment">
+            Payment Options
           </StyledLink>
         </StyledListItem>
         <StyledListItem>
