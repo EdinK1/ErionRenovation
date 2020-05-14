@@ -3,13 +3,14 @@ import { FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa"
 import styled from "styled-components"
 
 const StyledSection = styled.section`
+  border-top: 0.5px solid #333;
   max-width: 80%;
-  padding-bottom: 3rem;
+  padding: 3rem 0;
   margin: 0 auto;
   text-align: center;
 
   @media only screen and (min-width: 768px) {
-    padding: 1rem 0 4rem 0;
+    padding: 3rem 0 4rem 0;
   }
 `
 

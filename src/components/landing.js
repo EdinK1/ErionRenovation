@@ -9,8 +9,8 @@ const StyledSection = styled.section`
   min-height: 100vh;
   text-align: center;
   text-shadow: 0 0 1px #000;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://www.credibly.com/wp-content/uploads/2015/04/handyman-1030x458.jpg")
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://images.unsplash.com/photo-1499815022134-5a333f5a299c?ixlib=rb-1.2.1&auto=format&fit=crop&w=2125&q=80")
       no-repeat center center/cover;
   color: #fff;
 
@@ -29,13 +29,12 @@ const StyledTitle = styled.h1`
 `
 
 const StyledNumber = styled.h2`
-  color: #000;
+  text-shadow: 1px 1px 1px #000;
   font-weight: bold;
   font-size: 1.8rem;
 
   @media only screen and (min-width: 768px) {
     font-size: 2.6rem;
-    text-shadow: 1px 1px 1px #000;
   }
 `
 
@@ -50,10 +49,6 @@ const StyledParagraph = styled.p`
     text-shadow: 1px 1px 1px #000;
   }
 `
-
-// const data = useStaticQuery(graphql`
-//   file(relativePath: { eq: 'src/images/landing-bg.jpg' })
-// `)
 
 const Landing = () => (
   <StyledSection>
