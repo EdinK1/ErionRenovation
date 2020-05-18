@@ -12,7 +12,7 @@ const StyledSection = styled.section`
   min-height: 40vh;
   text-align: left;
   text-shadow: 0 0 1px #000;
-  background-image: url("/static/landing-bg.jpg");
+  background-image: url("https://template82007.motopreview.com/mt-demo/82000/82007/mt-content/uploads/2019/06/mt-1828-content-bg-1.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
