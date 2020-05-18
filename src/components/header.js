@@ -5,7 +5,7 @@ import { FaTools } from "react-icons/fa"
 import styled from "styled-components"
 
 const StyledHeader = styled.header`
-  background: transparent;
+  background: #fff;
   position: absolute;
   top: 0;
   left: 0;
@@ -35,8 +35,9 @@ const StyledNav = styled.nav`
 
 const StyledLink = styled.a`
   text-decoration: none;
-  color: #fff;
+  color: #000;
   cursor: pointer;
+  font-size: 0.9rem;
   font-family: sans-serif, serif;
   font-weight: 600;
 
@@ -91,7 +92,10 @@ const Header = () => (
           "text-shadow": "1px 1px 1px #000",
         }}
       >
-        <StyledLink href="#" style={{ "font-weight": "200" }}>
+        <StyledLink
+          href="#"
+          style={{ "font-weight": "200", "font-size": "2rem" }}
+        >
           Erion Renova
           <FaTools style={StyledIcon} />
           on

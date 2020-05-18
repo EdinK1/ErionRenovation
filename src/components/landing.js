@@ -4,26 +4,41 @@ import styled from "styled-components"
 const StyledSection = styled.section`
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  padding-left: 2rem;
+  margin-top: 8rem;
+  padding-top: 2rem;
   flex-direction: column;
-  min-height: 100vh;
-  text-align: center;
+  min-height: 40vh;
+  text-align: left;
   text-shadow: 0 0 1px #000;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("https://images.unsplash.com/photo-1499815022134-5a333f5a299c?ixlib=rb-1.2.1&auto=format&fit=crop&w=2125&q=80")
-      no-repeat center center/cover;
+  background-image: url("/static/landing-bg.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #fff;
 
   @media only screen and (min-width: 768px) {
-    min-height: 80vh;
+    min-height: 75vh;
+    margin-top: unset;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 9rem;
+    padding-top: unset;
+    text-align: left;
   }
 `
 const StyledTitle = styled.h1`
-  font-size: 2rem;
+  font-size: 1.25rem;
+  width: 60%;
+  color: #373737;
   font-weight: 600;
+  text-transform: uppercase;
 
   @media only screen and (min-width: 768px) {
-    font-size: 2.2rem;
+    font-size: 3.5rem;
+    line-height: 1.1;
     text-shadow: 1px 1px 1px #000;
   }
 `
@@ -31,22 +46,40 @@ const StyledTitle = styled.h1`
 const StyledNumber = styled.h2`
   text-shadow: 1px 1px 1px #000;
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 1.15rem;
+  color: #373737;
+  font-style: italic;
 
   @media only screen and (min-width: 768px) {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
+  }
+`
+const StyledButton = styled.a`
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  margin-top: 1rem;
+  background-color: ${props =>
+    props.secondary ? "rgb(225, 37, 26)" : "#19599b"};
+  text-decoration: none;
+  padding: 1rem;
+  font-family: serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-color: transparent;
+
+  @media only screen and (min-width: 768px) {
+    margin-right: 1rem;
+    margin-top: unset;
   }
 `
 
-const StyledParagraph = styled.p`
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 1.3;
-  font-family: sans-serif;
+const StyledButtonWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
 
   @media only screen and (min-width: 768px) {
-    font-size: 2.1rem;
-    text-shadow: 1px 1px 1px #000;
+    flex-direction: row;
   }
 `
 
@@ -54,7 +87,12 @@ const Landing = () => (
   <StyledSection>
     <StyledTitle>ONE CALL can solve all your house problems!</StyledTitle>
     <StyledNumber>(+1) 604-442-7419 </StyledNumber>
-    <StyledParagraph>Call us for your free estimate.</StyledParagraph>
+    <StyledButtonWrapper>
+      <StyledButton href="#what">Our Services</StyledButton>
+      <StyledButton href="#contact" secondary>
+        Request Estimate
+      </StyledButton>
+    </StyledButtonWrapper>
   </StyledSection>
 )
 
